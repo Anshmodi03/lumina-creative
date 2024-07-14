@@ -1,0 +1,491 @@
+/* css values for all elements/tags starts */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #fcf5e9;
+    --dark-color: #333;
+    --container-normal: 1100px;
+    --container-wide: 1400px;
+    --container-narrow: 900px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-image: linear-gradient(120deg, #ffffff 60.25%, #000000 50%);
+}
+
+/* css values for all elements/tags ends */
+
+/* css for header , heading , nav and hero starts */
+
+a {
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header .container .main-menu li a:active {
+    background-color:#FCF5E9 ;
+}
+
+.bg-primary {
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+    padding: 2px;
+    margin-right: 12px;;
+    color: #333;
+    font-size: 60px;
+    border-radius: 5px;
+  }
+
+  .hero .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+/* animation in css hero section h2 tag in lumina creative website starts */
+
+  .hero .container-sm .bg-primary {
+    animation: showup 4s;
+    animation-iteration-count: 1;
+  }
+
+  .hero .container-sm {
+    animation: slidein 4s;
+    animation-iteration-count: 1;
+  }
+  
+
+  @keyframes slidein {
+    0% { margin-left:-1000px; }
+    100% { margin-left:225px; justify-content: center; }
+  }
+
+  @keyframes showup {
+   0% {opacity:0;}
+   20% {opacity:0.2;}
+   80% {opacity:0.6;}
+   100% {opacity:1;}
+  }
+
+  
+/* animation in css hero section h2 tag in lumina creative website ends */
+  
+/* css for header , heading , nav and hero ends  */
+
+/* css for section starts  */
+
+  .bg-dark {
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    color: #000000;
+    font-weight:500;
+  }
+  
+  .bg-dark .bg-primary {
+    padding: 0 0.3rem;
+  }
+
+  /* css for section ends */
+
+  /* css for button in contact.html starts */
+
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #6d1538;
+    background-image: linear-gradient(135deg, #ffffff 30%, #ff004c 50%, #000000 70%);
+    font-family: inherit;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #6d1538;
+    background-image: linear-gradient(135deg, #ffffff 30%, #ff004c 50%, #000000 70%);
+    color:rgb(255, 255, 255);
+    font-weight: 600;
+    padding: 12px;
+    transition: all 1s ease-in-out;  
+  }
+
+  /* css for button in contact.html ends */
+
+  /* css for hiding label in the form in contact.html starts */
+  
+  .visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  /* css for hiding label in the form in contact.html ends */
+
+  /* css for section heading in about.html starts */
+
+  .section-heading {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .container {
+    max-width: var(--container-normal);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .container-lg {
+    max-width: var(--container-wide);
+  }
+  
+  .container-sm {
+    max-width: var(--container-narrow);
+  }
+
+  /* css for section heading in about.html ends */
+
+  /* css for header and nav in lumina creative website starts */
+
+  .header {
+    margin: 1.5rem auto;
+  }
+  
+  .header .logo {
+    width: 130px;
+  }
+  
+  .header .header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header .main-menu {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .header .main-menu a {
+    padding: 10px;
+    margin-right: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+  }
+  
+  .header .main-menu a:hover {
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 15px;
+    margin-right: 15px;
+    transition: all 0.6s ease-out;
+    transition-delay: 0.1s;
+    
+  }
+
+  .current {
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+    padding: 20px;
+    color:darkslategrey;
+  }
+
+  .hero {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 49px;
+    line-height: 1.4;
+    font-weight:250;
+  }
+
+  /* css for header and nav in lumina creative website ends */
+
+  /* css for index.html starts */
+
+  .gallery-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .gallery-item {
+    width: calc(33.333% - 20px);
+    border-radius: 10px;
+  }
+  
+  .gallery-item img {
+    border-radius: 10px;
+  }
+  
+  .gallery-item:hover {
+    opacity: 0.9;
+    transform:scale(0.95);
+    box-shadow: 0 0 3px 3px rgb(29, 29, 29); 
+    transition: all 1s ease-in-out;
+  }
+  
+  /* css for index.html ends */
+  
+  /* css for About.html starts */
+  
+  .services {
+    padding: 30px 0 40px;
+  }
+
+  .services .container .section-heading {
+    color: #ffffff;
+  }
+  
+  .services-flex {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .service-item h4 {
+    font-size: 16px;
+    margin-bottom: 9px;
+  }
+
+  .team .container-lg .team-flex .team1 {
+    color:darkviolet;
+    font-weight: bolder;
+  }
+
+  .team .container-lg .team-flex .team2 {
+    color:darkviolet;
+    font-weight: bolder;
+  }
+
+  .team .container-lg .team-flex .team3 {
+    color:rgb(0, 89, 255);
+    font-weight: bolder;
+  }
+  
+  .team {
+    padding: 30px 0 40px;
+  }
+  
+  .team-flex {
+    display: flex;
+    gap: 14px;
+  }
+  
+  .team img {
+    border-radius: 10px;
+    box-shadow: rgb(62, 73, 68) 0px 3px 8px;
+
+  }
+
+  .team img:hover {
+    transform: scale(0.95);
+    opacity: 0.9;
+    cursor:pointer;
+    transition: all 1s ease-in-out;
+    box-shadow: 0 0 3px 3px rgb(48, 32, 51);
+  }
+
+  /* css for About.html ends */
+   
+  /* css for contact.html starts */
+
+  .contact {
+    padding: 30px 0 40px;
+  }
+  
+  .contact p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 700;
+  }
+
+  .contact p .contact-span {
+    color: white;
+  }
+  
+  .form-group {
+    margin: 30px 0;
+  }
+  
+  .contact input,
+  .contact textarea {
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-family: inherit;
+    font-size:16px ;
+    padding-bottom: 10px;
+    background-color: #6d1538;
+    background-image: linear-gradient(135deg, #ffffff 10%, #202025 70%, black 80%);
+    color:#ff6a41;
+    font-weight: 600;
+
+  }
+  
+  .contact textarea {
+    height: 200px;
+  }
+  
+  .contact input:focus,
+  .contact textarea:focus {
+    outline: 0;
+    font-weight: 600;
+  }
+
+  .contact ::placeholder {
+    color:rgb(0, 0, 0);
+    margin-top: 15px;
+    font-weight: 700;
+
+  }
+  
+  .contact button {
+    width: 100%;
+  }
+
+  /* css for contact.html ends */
+
+  /* css for footer starts */
+  
+  .footer {
+    display: block;
+    padding: 25px 15px;
+    margin-top: 20px;
+  }
+  
+  .footer .footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer img {
+    width: 140px;
+    height: 40px;
+  }
+  
+  .footer h4 {
+    font-size: 15px;
+    margin-bottom: 5px;
+    padding: 5px;
+    color:rgb(255, 255, 255) ;
+    font-weight: 700
+  }
+
+  .footer .footer-flex ul {
+    color: #e6dfe9;
+    font-weight: 600;
+  }
+
+  .footer .footer-flex ul li.hover1:hover {
+    color:coral;
+    cursor: pointer;
+    transition: all 1.1s ease-in-out;
+  }
+
+  .footer .footer-flex ul li.hover2:hover {
+    color:lightsalmon;
+    cursor: pointer;
+    transition: all 1.1s ease-in-out;
+  }
+
+  .footer .footer-flex ul li.hover3:hover {
+    color:darksalmon;
+    cursor: pointer;
+    transition: all 1.1s ease-in-out;
+  }
+  
+  .footer a {
+    margin: 9px;
+  }
+  .footer a i {
+    color: rgb(255, 81, 0);
+  }
+
+  .footer a i:hover {
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+    transition: all 0.9s ease-in-out;
+  }
+
+  /* css for footer ends */
+
+  /* css for a responsive website using media queries */
+
+@media (max-width: 768px) {
+  .header .header-flex,
+  .footer .footer-flex,
+  .services .services-flex,
+  .team .team-flex {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .bg-primary {
+    font-size: 40px;
+  }
+
+  .hero {
+    height: 300px;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .gallery-item {
+    width: calc(50% - 20px);
+  }
+
+  .contact p .contact-span {
+    color: rgb(0, 0, 0);
+  }
+
+  .footer .footer-flex {
+    text-align: center;
+  }
+
+  .footer img {
+    background-color: rgb(214, 9, 122);
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgb(255, 255, 255) 0px 3px 10px;
+  }
+
+  @keyframes slidein {
+    0% { margin-left:-1000px; }
+    100% { margin-left: 40px; justify-content: center; }
+  }
+}
